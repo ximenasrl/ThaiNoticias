@@ -1,0 +1,127 @@
+html{
+    font-size: 62.5%;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgba(147, 207, 244, 0.905);
+}
+
+#encabezado{
+    border: 0.2em solid rgba(30, 152, 228, 0.896);
+    display: grid;
+    grid-template-columns: 2fr 3fr 4fr;
+    justify-items: center;
+    align-items: center;
+}
+
+#encabezado img{
+    width: 60%;
+    height: 80%;
+    aspect-ratio: 1/1;
+    /* define la relación de aspecto entre el ancho y la altura de un elemento, asegurando que sus dimensiones 
+    mantengan esa proporción específica al cambiar el tamaño de la pantalla o el contenedor*/
+    border-radius: 100%;
+    object-fit: fill;
+}
+
+h1{
+    font-size: 5em;
+    text-align: center;
+}
+#navegacion{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    font-size: 2em;
+    gap: 3em;
+
+}
+#navegacion a{
+    padding: 0.2em;
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+    background-color: rgba(0, 58, 139, 0.851);
+    border-radius: 20%;
+    text-shadow: 0.2em 0.2em 0.2em black;
+    text-align: center;
+}
+
+#contenedor-noticias{
+    border: 0.1em solid rgb(50, 112, 204);
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: auto;
+}
+
+.noticias{
+    border: 0.1em solid darkblue;
+    grid-column: 1/5;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr 2fr;
+}
+
+.noticias h2{
+    grid-column: 1/4;
+    text-align: center;
+    align-content: center;
+    font-size: 3em;
+}
+
+.noticia{
+    margin-left: 1em;
+    border: 0.2em dashed rgb(0, 97, 139);
+}
+
+.noticia h3{
+    text-align: center;
+    font-size: 1.7em;
+}
+
+.noticia p{
+    text-align: justify;
+    font-size: 1.3em;
+}
+
+.noticias-urgentes{
+    height: 30em;
+    overflow-y: auto;
+    border: 0.2em dotted darkslateblue;
+    grid-column: 5/7;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat (3,1fr)
+}
+
+.noticias-urgentes h2{
+    text-align: center;
+    align-content: center;
+    font-size: 3em;
+}
+
+.noticia-u{
+    margin-left: 1em;
+    border: 0.2em dashed darkcyan;
+    align-content: center;
+    text-align: center;
+    height: 30em;
+    
+}
+
+.noticia-u h3{
+    font-size: 1.7em;
+}
+
+.noticia-u p{
+    font-size: 1.3em;
+}
+/* IMÁGENES DE LAS NOTICIAS */
+.noticia img, .noticia-u img {
+    width: 70%;
+    height: 15em;
+    object-fit: cover;
+    border-radius: 0.5em;
+    display: block;
+}
